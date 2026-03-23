@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{$page_description|default:'Opis domyślny'}">
+    <title>{$page_title|default:"Tytuł domyślny"}</title>
+    <link rel="stylesheet" href="{$app_url}/css/style.css">
+</head>
+
+<body class="landing is-preload">
+
+    <div id="page-wrapper">
+
+        <section id="banner">
+            <h2><b>{$page_header|default:"Tytuł domyślny"}</b></h2> </br>
+			<p><b>{$page_description|default:"Opis domyślny"}</b></p>
+            <button class="button primary">Oblicz swój kredyt</button>
+		</section>
+
+        <section id="main" class="container">
+            <section class="box special">
+                {block name=content} Domyślna treść zawartości .... {/block}
+            </section>
+        </section>
+
+        <section id="cta">
+            {block name=contact} Domyślna treść kontaktu .... {/block}
+        </section>
+
+
+        <footer id="footer">
+            <p>{block name=footer} Domyślna treść stopki.... {/block}</p>
+            <ul class="copyright">
+                <li>&copy; zjasiak. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
